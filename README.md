@@ -5,10 +5,23 @@
 <br>
 <br>
 
+<font style="font-weight:bold;">
+    Preview
+</font>
+
+<br>
+<br>
+
+<img src=https://i.imgur.com/v5ndrs2.png>
+
+<br>
+<br>
+
 
 <font style="font-weight:bold; margin.bottom:20px;">
     Instalation
 </font>
+<br>
 <br>
 
     Change [esx_status/client/main.lua]
@@ -20,4 +33,4 @@
     TriggerEvent('ks_hud:onTick', GetStatusData(true))
 
 
-<img src="https://i.imgur.com/lC88D0r.png">
+<img src="https://i.imgur.com/cHjqnZa.png">
