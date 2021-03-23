@@ -12,11 +12,10 @@
 <br>
 <br>
 
-<img src=https://i.imgur.com/v5ndrs2.png>
+<img src=https://i.imgur.com/sHpRWTT.png>
 
 <br>
 <br>
-
 
 <font style="font-weight:bold; margin.bottom:20px;">
     Instalation
@@ -24,13 +23,17 @@
 <br>
 <br>
 
-    Change [esx_status/client/main.lua]
+    Add this on server.cfg or scripts.cfg file:
+    ensure ks_hud_v3
 
-    TriggerEvent('esx_status:onTick', GetStatusData(true))
+<br>
+<font style="font-weight:bold; margin.bottom:20px;">
+    Properties
+</font>
 
-    to
+<br>
+<br>
 
-    TriggerEvent('ks_hud:onTick', GetStatusData(true))
-
-
-<img src="https://i.imgur.com/cHjqnZa.png">
+    Optimized script (0.01) ms
+    Simple code in JavaScript
+    

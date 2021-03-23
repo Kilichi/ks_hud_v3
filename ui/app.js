@@ -6,11 +6,10 @@ $(function() {
 
     window.addEventListener('message', function(event)
         {
-
-            loadStatus = function(){
+            function loadStatus(){
             
                 $('.hunger').css({'width':event.data.hunger+'%'})
-                $('.water').css({'width':event.data.water+'%'})
+                $('.water').css({'width':event.data.thirst+'%'})
             
                 var finalHealt = event.data.healt - 100
             
@@ -27,33 +26,22 @@ $(function() {
                     }
 
                 }
-            
-                $('.armour').css({'width':event.data.armour+'%'})
-            
             }
             
-            if (event.data.hud)
+            if (event.data.showHud)
             {
 
                 loadStatus()
-                
-                if (event.data.veh)
+
+                if (event.data.inVehicle)
                 {
                     $('body').animate({'left':'300','bottom':'20'},250)
+                    $('.bar').css({"display":"block","width":"100px"},200)
                 }
                 else
                 {
-                    $('body').animate({'left':'0',"bottom":'0'},250)
-                }
-            
-                if (event.data.hideVip)
-                {
-                    console.log('Hola')
-                    $("#vip").animate({"opacity":'0'})
-                }
-                else
-                {
-                    $("#vip").animate({"opacity":'1'})
+                    $('.bar').css({"display":"inline-block","width":"75px"},200)
+                    $('body').animate({'left':'0',"bottom":'0',"display":"inline-block"},250)
                 }
 
             }

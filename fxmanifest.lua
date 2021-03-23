@@ -2,22 +2,17 @@ fx_version 'cerulean'
 game 'gta5'
 
 author 'Kilichi | Kilichi#0001'
-description 'KS HUD V3'
+description 'Kilichi Hud'
 version '0.1.0'
 
-ui_page 'html/index.html'
-
 client_scripts {
-    'client/*.lua',
+    'client/*.js'
 }
 
-server_script {
-    '@mysql-async/lib/MySQL.lua',
-    'server/*.lua',
-}
+ui_page 'ui/index.html'
 
 files {
-    'html/*.css',
-    'html/*.html',
-    'html/*.js'
+    'ui/*.css',
+    'ui/*.html',
+    'ui/*.js'
 }
