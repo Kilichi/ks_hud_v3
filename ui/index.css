@@ -1,0 +1,95 @@
+:root {
+    --main-bkg-color: rgba(17, 17, 17, 0.651);
+    --default-blur: .14vw;
+    --default-box-shadow: inset 0px 0px 12px 0px rgba(17, 17, 17, 0.644);
+    --green-color: #15DB95; /*#3AFE32*/
+    --yellow-color: #FED614;
+    --blue-color: #06D2EA;
+    --red-color: #FC4445; /*#F33439*/
+    --violet-color: #8860D0;
+    --purple-color: #E64398;
+  }
+  
+  body {
+    overflow: hidden;
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+  }
+  
+  #main {
+    display: block;
+    bottom: 40;
+  }
+  
+  body .bar {
+    display: inline-block;
+    border-radius: 2vh;
+    width: 75px;
+    margin-top: 5px;
+    border: 1px solid black;
+    background: var(--main-bkg-color);
+    box-shadow: var(--default-box-shadow);
+  }
+  
+  body .none {
+    display: none;
+    border-radius: 2vh;
+    margin-top: 5px;
+    border: none;
+    background: none;
+    box-shadow: none;
+    margin-top: auto;
+    width: 20px;
+  }
+  
+  body .hunger {
+    border-radius: 20px;
+    height: 8px;
+    width: 50%;
+    background-color: rgba(255, 123, 0, 0.966);
+  }
+  
+  body .water {
+    border-radius: 20px;
+    height: 8px;
+    width: 30%;
+    background-color: #2e63ff;
+  }
+  
+  body .healt {
+    border-radius: 20px;
+    height: 8px;
+    width: 60%;
+    background-color: green;
+  }
+  
+  body .stress {
+    border-radius: 20px;
+    height: 8px;
+    width: 10%;
+    background-color: rgb(197, 31, 197);
+  }
+  
+  body .armour {
+    border-radius: 20px;
+    height: 8px;
+    width: 100%;
+    background-color: #266dc9;
+  }
+  
+  body .blue {
+    color: #266dc9;
+  }
+  .bar {
+    background-color: black;
+  }
+  .one {
+    position: absolute;
+    top: 0;
+  }
+  .two {
+    position: absolute;
+    bottom: 0;
+  }
+  /*# sourceMappingURL=index.css.map */
